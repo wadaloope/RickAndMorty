@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgba(65, 117, 163, 0.377);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+nav ul li button {
+    position: relative;
+}
+
+nav ul li button div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li ul {
+    display: flex;
+    flex-direction: column;
+    display:none;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+    padding-right: 15px;
+    width: 130px;
+    text-align: left;
+    background-color: black;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+    font: 1.5em sans-serif;
+    padding-right: 15px;
+}
+
+nav button {
+    padding-right: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font: 1.5em sans-serif;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(110, 184, 13);
+}
+
+nav button:hover {
+    color: rgb(110, 184, 13);
+
+}
+
+nav #filtrar:hover>ul {
+    display: block;
+
+}
+
+nav li:hover {
+    color: rgb(171, 206, 14);
+
+}
+
+@media (max-width:720px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+body {
+    width: auto;
+    min-height: 100vh;
+    background: url(images/starry-sky.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+    text-align: center;
+    color: rgb(145, 255, 0);
+    padding: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    padding: 2%;
+    border-radius: 30px;
+    border-color: rgba(245, 245, 220, 0);
+    background: url(images/starry-sky.jpg) no-repeat;
+    size: inherit;
+    max-width: 291px;
+    background-size: inherit;
+
+
+}
+
+#contBoton {
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton {
+    background-color: rgba(65, 117, 163, 0.377);
+    color: white;
+    padding: 7px;
+    font-weight: 600px;
+    font: 1.3em sans-serif;
+    border-radius: 15px;
+}

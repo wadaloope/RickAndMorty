@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 maximum-scale=1.0>
+    <title>About me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url(images/starry-sky.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        button {
+            background-color: rgba(65, 117, 163, 0.377);
+            color: white;
+            padding: 7px;
+            font-weight: 600px;
+            font: 1.5em sans-serif;
+            border-radius: 15px;
+            width: 90px;
+        }
+
+        @media (max-width:720px) {
+             .layout{
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+            }
+
+            nav {
+                padding: 10px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div 
+        style="display: flex;flex-direction: column; align-items: start; flex-wrap: wrap; max-width: 1200px;">
+        <h1 style="display: block; margin-top: 50px; margin-left: 90px; margin-bottom: 30px; color:white">About me</h1>
+        <div class="layout"style="display: flex; flex-direction: column; align-items: center;">
+            <div class="content" style="display: flex; flex-direction: row; column-gap: 60px; flex-wrap: wrap; align-items: center; margin-left: 60px; margin-right: 60px;">
+               <p
+                    style="max-width: 600px; margin-right: 0px; color:rgb(255, 255, 255);  font-size: x-large; line-height: 35px;text-align: justify;text-justify: inter-word;">
+                    Mi nombre
+                    es Guadalupe, tengo 46 (¡!) años y soy Ing. en Electrónica (a veces también juego a ser
+                    ilustradora).
+                    </br>
+                    Aldu y Nahue: sepan perdonar este código que es un verdadero bardo; una especie de Frankenstain
+                    entre lo
+                    que vimos en clase, lo que me distraje y lo que logré
+                    parchar con la ayuda de <i>Youtube's tutorials</i>. Hay peligrosas variables globales y tambien un
+                    que
+                    otro <strong>console.log</strong>, no se espanten.</br>
+                    Muchas muchas gracias por esta oportunidad de poner las neuronas a ejercitar, y por forzarnos a
+                    conocernos entre nosotras, para trabajar en grupo... ¡¡Resultamos ser una audiencia muy copada!!
+                    </br>
+                    ¡¡Gracias por tanto / perdón por tan poco!!!</br>
+                    Esperemos estarnos "viendo" a la vuelta de la esquina 😊😊😊.</p> 
+                    <image src="images/profilePic.jpg" style=" width: 400px; height: 533px; align-self: auto;"></image>
+            </div>
+            <div class="botones" style="display: flex;flex-direction: row; margin-left: 60px;margin-top: 40px; margin-bottom: 60px;">
+                <a href="https://www.instagram.com/wadaloope_ok/"
+                    style=" left: 400px;bottom: 330px"><button>Insta</button></a>
+                <a href="index.html" style=" left: 500px;bottom: 330px; "><button>Volver</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
